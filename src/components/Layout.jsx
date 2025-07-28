@@ -1,18 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const links = [
     { label: "Home", path: "/" },
@@ -21,15 +11,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled || location.pathname !== "/"
-          ? "bg-[#5787b2] shadow-md"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
-        {/* Logo + Texto */}
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#5787b2] shadow-md">
+      <div className="container mx-auto px-6 md:px-10 flex items-center justify-between py-4">
+        {/* Logo + Nombre */}
         <div className="flex items-center gap-3">
           <img
             src={logo}
@@ -43,7 +27,7 @@ const Navbar = () => {
         </div>
 
         {/* Links */}
-        <ul className="hidden md:flex gap-8 text-white font-bold text-lg">
+        <ul className="hidden md:flex gap-10 text-white font-bold text-lg">
           {links.map((item) => (
             <li key={item.label}>
               <Link
