@@ -12,7 +12,7 @@ const Contact = () => {
           <h1 className="text-5xl font-extrabold mb-4">Contact Us</h1>
           <p className="text-[#9a9a9a]">
             <span className="text-[#bcbcbc]">Home</span> &nbsp;&gt;&nbsp;
-            <span className="text-[#fab037] font-semibold">Contact Us</span>
+            <span className="text-[#363636] font-semibold">Contact Us</span>
           </p>
         </div>
       </section>
@@ -21,9 +21,9 @@ const Contact = () => {
       <section className="bg-gray-50 py-20 px-4 md:px-16">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-5xl font-extrabold mb-4">
-            Get in touch<span className="text-[#fab037]">.</span>
+            Get in touch<span className="text-[#363636]">.</span>
           </h2>
-          <div className="w-24 h-1 bg-[#fab037] mx-auto mb-6 rounded-full" />
+          <div className="w-24 h-1 bg-[#363636] mx-auto mb-6 rounded-full" />
           <p className="text-[#9a9a9a] max-w-2xl mx-auto mb-10">
             We help save lives of your beloved pets. Our expert pet trainers are always here to help your pet in need.
           </p>
@@ -62,7 +62,7 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="w-20 h-20 bg-[#fab037] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
+              <div className="w-20 h-20 bg-[#363636] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
                 📍
               </div>
               <h4 className="text-xl font-bold mb-2">Address</h4>
@@ -72,7 +72,7 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <div className="w-20 h-20 bg-[#fab037] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
+              <div className="w-20 h-20 bg-[#363636] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
                 ✉️
               </div>
               <h4 className="text-xl font-bold mb-2">Email</h4>
@@ -82,7 +82,7 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <div className="w-20 h-20 bg-[#fab037] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
+              <div className="w-20 h-20 bg-[#363636] rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
                 📞
               </div>
               <h4 className="text-xl font-bold mb-2">Phone</h4>

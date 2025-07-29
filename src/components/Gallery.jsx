@@ -35,17 +35,17 @@ const Gallery = () => {
   return (
     <section className="py-20 px-6 md:px-20">
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#363636] text-center mb-12">
-        Our Services <span className="text-[#fab037]">.</span>
+        Nuestros Servicios <span className="text-[#363636]">.</span>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {services.map((s, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl border shadow p-6 relative overflow-hidden group hover:border-[#fab037] transition"
+            className="bg-white rounded-xl border shadow p-6 relative overflow-hidden group hover:border-[#363636] transition"
           >
             {/* Precio en la esquina superior derecha */}
-            <div className="absolute top-4 right-4 bg-[#fab037] text-white font-bold rounded-full w-14 h-14 flex items-center justify-center shadow-lg text-sm">
+            <div className="absolute top-4 right-4 bg-[#363636] text-white font-bold rounded-full w-14 h-14 flex items-center justify-center shadow-lg text-sm">
               {s.price}
             </div>
 

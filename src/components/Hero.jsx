@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    bg: "bg-[url('https://images.unsplash.com/photo-1560807707-8cc77767d783')] bg-cover bg-center", 
+    bg: "bg-[url('https://www.patasencasa.com/sites/default/files/styles/article_detail_1200/public/2023-08/dachshund.jpg.webp?itok=flIJskJM')] bg-cover bg-center", 
     title: "Man’s best friend!",
     desc: "Welcome to the no.1 rated dogs training & breeding center in Sydney.",
   },
   {
-    bg: "bg-[url('https://images.unsplash.com/photo-1601758123927-1965b6d864a7')] bg-cover bg-center", 
+    bg: "bg-[url('https://img.freepik.com/foto-gratis/cuatro-lindos-cachorros-golden-retriever-descansando-sobre-suelo-hierba_181624-26268.jpg?semt=ais_hybrid&w=740&q=80')] bg-cover bg-center", 
     title: "Happy and Healthy Pets!",
     desc: "Our mission is to keep your pets joyful and full of life.",
   },
   {
-    bg: "bg-[url('https://images.unsplash.com/photo-1537151625747-768eb6cf92b6')] bg-cover bg-center", 
+    bg: "bg-[url('https://huskysiberianshadi.com/wp-content/uploads/2022/03/3E57DEC3-5326-40D5-BE50-00E3EDF1AF24-768x450.jpeg')] bg-cover bg-center", 
     title: "Training, Grooming & More",
     desc: "Everything your pet needs in one place.",
   },
@@ -49,10 +49,10 @@ const Hero = () => {
         <p className="text-white mt-6 text-lg drop-shadow-md">{desc}</p>
 
         <div className="mt-8 flex gap-4">
-          <button className="bg-[#fab037] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#e89e1e] transition">
+          <button className="bg-[#363636] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#e89e1e] transition">
             Learn More
           </button>
-          <button className="bg-white text-[#fab037] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+          <button className="bg-white text-[#363636] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
             Purchase
           </button>
         </div>
@@ -67,7 +67,7 @@ const Hero = () => {
       </button>
       <button
         onClick={next}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#fab037] hover:bg-[#e89e1e] text-white font-bold z-10 transition"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#363636] hover:bg-[#e89e1e] text-white font-bold z-10 transition"
       >
         →
       </button>
