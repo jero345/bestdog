@@ -1,45 +1,67 @@
-import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram } from "react-icons/fa";
-// Si quieres usar el logo "X" moderno:
-// import { FaXTwitter } from "react-icons/fa6";
+import { FaTiktok, FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import logo from "../assets/logo.png"; // ajusta el path según tu proyecto
 
 const Footer = () => {
   return (
-    <footer className="bg-[#121212] text-white py-16 px-6 md:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* About */}
-        <div>
-          <h4 className="text-2xl font-extrabold mb-4">About</h4>
-          <p className="text-gray-400 max-w-sm mb-6">
-            At Pawfy we help save lives of your beloved pets, we have a team of
-            expert pet trainers and doctors who are here to help your pet in need.
-          </p>
+    <footer className="bg-[#000] text-white py-10 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center text-center md:text-left">
+        
+        {/* Logo */}
+        <div className="flex justify-center md:justify-start">
+          <img
+            src={logo}
+            alt="King Dog Logo"
+            className="h-20 w-auto object-contain"
+            draggable="false"
+          />
+        </div>
 
-          {/* Social Icons */}
+        {/* Contacto */}
+        <div className="text-center">
+          <p className="flex items-center justify-center gap-2 mb-2">
+            <FaPhoneAlt /> 3146582927
+          </p>
+          <p className="flex items-center justify-center gap-2 mb-2">
+            <FaEnvelope /> Cachorrosbestdog
+          </p>
+          <p className="flex items-center justify-center gap-2">
+            <FaMapMarkerAlt /> Oriente Medellín
+          </p>
+        </div>
+
+        {/* Redes Sociales */}
+        <div className="flex flex-col items-center md:items-end">
+          <h4 className="text-lg font-semibold mb-4">Síguenos</h4>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-[#fab037] transition">
-              <FaFacebookF />
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
+            >
+              <FaTiktok className="text-white text-lg" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-[#fab037] transition">
-              <FaTwitter /> 
-              {/* O usa <FaXTwitter /> si importas de fa6 */}
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
+            >
+              <FaFacebookF className="text-white text-lg" />
             </a>
-            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-[#fab037] transition">
-              <FaPinterestP />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 hover:bg-[#fab037] transition">
-              <FaInstagram />
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
+            >
+              <FaInstagram className="text-white text-lg" />
             </a>
           </div>
         </div>
       </div>
-
-      <div className="text-center text-gray-500 mt-12">© GFXPARTNER</div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer;
