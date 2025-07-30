@@ -1,19 +1,24 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Banner from "./Banner";
 
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Navbar visible en todas las páginas */}
+      {/* Navbar fijo */}
       <Navbar />
 
-      {/* Contenido principal (con espacio para el navbar fijo) */}
-      <main className="flex-grow pt-20">
+      {/* Banner debajo del Navbar */}
+      <Banner />
+
+      {/* Contenido principal */}
+      <main className="flex-grow pt-15"> 
+        {/* Cambié de pt-20 a pt-10 */}
         <Outlet />
       </main>
 
-      {/* Footer en todas las páginas */}
+      {/* Footer */}
       <Footer />
     </div>
   );

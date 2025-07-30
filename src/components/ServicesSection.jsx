@@ -29,7 +29,7 @@ const Services = () => {
       {/* CONTENIDO */}
       <section className="pt-[120px] pb-20 px-6 md:px-20 text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-          Lo que hacemos<span className="text-[#363636]">.</span>
+          Lo que ofrecemos<span className="text-[#363636]">.</span>
         </h2>
         <p className="text-white text-lg max-w-3xl mx-auto mt-4">
           Ayudamos a salvar vidas de sus queridas mascotas. Nuestros entrenadores de mascotas expertos siempre están aquí para ayudar a su mascota necesitada.

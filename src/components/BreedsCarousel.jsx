@@ -1,16 +1,24 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+// Importar imágenes locales
+import golden from "../assets/golden.jpeg";
+import bulldog from "../assets/Bulldog.webp";
+import beagle from "../assets/beagle.jpg";
+import dalmata from "../assets/dalmata.jpg";
+import rottweiler from "../assets/rottweiler.jpg";
+import doberman from "../assets/doberman.jpeg";
+
 const breeds = [
-  { name: "Bolognese", img: "https://i.ibb.co/4YJH7Kg/bolognese.jpg" },
-  { name: "Bulldog", img: "https://i.ibb.co/cY4nYrP/bulldog.jpg" },
-  { name: "Greyhound", img: "https://i.ibb.co/4P6pLHR/greyhound.jpg" },
-  { name: "Dalmatian", img: "https://i.ibb.co/3R8Z6nJ/dalmatian.jpg" },
-  { name: "Collie", img: "https://i.ibb.co/3S5Mzbc/collie.jpg" },
-  { name: "Dachshund", img: "https://i.ibb.co/kXy5y5N/dachshund.jpg" },
+  { name: "Golden Retriever", img: golden },
+  { name: "Bulldog", img: bulldog },
+  { name: "Beagle", img: beagle },
+  { name: "Dalmata", img: dalmata },
+  { name: "Rottweiler", img: rottweiler },
+  { name: "Doberman", img: doberman },
 ];
 
 const BreedsCarousel = () => {
@@ -25,7 +33,7 @@ const BreedsCarousel = () => {
       </p>
 
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
         breakpoints={{
@@ -34,6 +42,12 @@ const BreedsCarousel = () => {
         }}
         navigation
         pagination={{ clickable: true }}
+        autoplay={{
+          delay: 3000, // ⏱️ Tiempo que se queda cada slide (3s)
+          disableOnInteraction: false, // sigue después de interacción
+        }}
+        speed={800} // ⏩ Duración de la transición (0.8s)
+        loop={true}
         className="max-w-6xl"
       >
         {breeds.map((breed, idx) => (
