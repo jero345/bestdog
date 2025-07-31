@@ -1,47 +1,52 @@
-import aseo from "../assets/aseo.png";
+// src/components/Services.jsx
+import altaCalidad from "../assets/alta-calidad.jpg";
+import certificado from "../assets/certificado.png";
+import crianza from "../assets/crianza.jpg";
+import acompanamiento from "../assets/acompañamiento.png";
+import kit from "../assets/kit.png";
+import entregas from "../assets/entregas.png";
 
 const services = [
   {
-    title: "Cachorros de alta calidad ",
+    title: "Cachorros de alta calidad",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servi.",
-    img: "../assets/aseo.png",
+    img: altaCalidad,
   },
   {
     title: "Certificado de salud y pureza",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
-    img: "https://i.ibb.co/Zh0vPvD/training.jpg",
+    img: certificado,
   },
   {
     title: "Crianza con ética",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
-    img: "https://i.ibb.co/N6WLx3n/cleaning.jpg",
+    img: crianza,
   },
   {
     title: "Acompañamiento y seguimiento",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
-    img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
-  },
- {
-    title: "Kit de bienvenida ",
-    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
-    img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
+    img: acompanamiento,
   },
   {
-    title: "Entregas nacionales ",
+    title: "Kit de bienvenida",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
-    img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
+    img: kit,
+  },
+  {
+    title: "Entregas nacionales",
+    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
+    img: entregas,
   },
 ];
 
 const Services = () => {
   return (
     <div className="bg-[#66B4FF] min-h-screen">
-      {/* CONTENIDO */}
       <section className="pt-[120px] pb-20 px-6 md:px-20 text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white">
           Lo que ofrecemos<span className="text-[#363636]">.</span>
         </h2>
-      
+
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map((s) => (
             <div
@@ -62,7 +67,9 @@ const Services = () => {
                 {s.title}
               </h3>
               <p className="text-[#9A9A9A] text-sm mb-2">{s.desc}</p>
-              <span className="text-[#363636] font-semibold text-sm">leer más</span>
+              <span className="text-[#363636] font-semibold text-sm">
+                leer más
+              </span>
             </div>
           ))}
         </div>

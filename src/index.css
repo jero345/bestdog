@@ -24,6 +24,58 @@ html, body {
   }
 }
 
+/* Estilos para el botón flotante de WhatsApp */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 17vh; /* Ajustado para que no choque con el scroll-to-top */
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366; /* Verde WhatsApp */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* Ondas expansivas */
+.btn-whatsapp::before,
+.btn-whatsapp::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  opacity: 0;
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp::before {
+  animation-delay: 1s;
+}
+
+.btn-whatsapp::after {
+  animation-delay: 1.3s;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+
 .animate-marquee {
   display: flex;
   animation: marquee 20s linear infinite;

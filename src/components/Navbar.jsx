@@ -59,25 +59,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Iconos redes sociales */}
-        <div className="flex gap-4">
-          <a
-            href="https://www.facebook.com/people/Best-Dog/100063841380143/?mibextid=wwXIfr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full hover:bg-gray-200 transition"
-          >
-            <FaFacebookF className="text-[#66B4FF] text-lg" />
-          </a>
-          <a
-            href="https://www.instagram.com/cachorrosbestdog/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full hover:bg-gray-200 transition"
-          >
-            <FaInstagram className="text-[#66B4FF] text-lg" />
-          </a>
-        </div>
+       
       </div>
     </nav>
   );
