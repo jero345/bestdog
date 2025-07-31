@@ -34,15 +34,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Síguenos</h4>
           <div className="flex gap-4">
             <a
-              href="https://www.tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
-            >
-              <FaTiktok className="text-white text-lg" />
-            </a>
-            <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/share/1CSyFCzPvG/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
@@ -50,7 +42,7 @@ const Footer = () => {
               <FaFacebookF className="text-white text-lg" />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/cachorrosbestdog/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#66B4FF] p-3 rounded-full hover:bg-[#4da6ff] transition"
@@ -64,4 +56,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;

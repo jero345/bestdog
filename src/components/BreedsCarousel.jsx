@@ -3,6 +3,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FaWhatsapp } from "react-icons/fa"; // Ícono de WhatsApp
 
 // Importar imágenes locales
 import golden from "../assets/golden.jpeg";
@@ -43,10 +44,10 @@ const BreedsCarousel = () => {
         navigation
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000, // ⏱️ Tiempo que se queda cada slide (3s)
-          disableOnInteraction: false, // sigue después de interacción
+          delay: 3000,
+          disableOnInteraction: false,
         }}
-        speed={800} // ⏩ Duración de la transición (0.8s)
+        speed={800}
         loop={true}
         className="max-w-6xl"
       >
@@ -66,13 +67,17 @@ const BreedsCarousel = () => {
         ))}
       </Swiper>
 
-      <div className="flex justify-center gap-6 mt-10">
-        <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-          Find Out More
-        </button>
-        <button className="bg-[#66B4FF] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#363636] transition">
-          Purchase
-        </button>
+      {/* Botón de WhatsApp */}
+      <div className="flex justify-center mt-10">
+        <a
+          href="https://api.whatsapp.com/send?phone=573146582927&text=¡Hola!%20Estoy%20interesado%20en%20un%20cachorro%20🐶"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-105 hover:from-green-600 hover:to-green-700 transition-transform duration-300"
+        >
+          <FaWhatsapp className="text-2xl" />
+          Contáctanos por WhatsApp
+        </a>
       </div>
     </section>
   );

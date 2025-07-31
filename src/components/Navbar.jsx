@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FaTiktok, FaFacebookF, FaInstagram } from "react-icons/fa";
-import logo from "../assets/pun-pun.png"; // tu logo
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import logo from "../assets/Loguini.png"; // tu logo
 
 const Navbar = () => {
   const location = useLocation();
@@ -50,8 +50,8 @@ const Navbar = () => {
                 className={`transition-colors ${
                   location.pathname === item.path
                     ? "text-[#363636]"
-                    : "hover:text-[#363636]"}`
-                }
+                    : "hover:text-[#363636]"
+                }`}
               >
                 {item.label}
               </Link>
@@ -62,15 +62,7 @@ const Navbar = () => {
         {/* Iconos redes sociales */}
         <div className="flex gap-4">
           <a
-            href="https://www.tiktok.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full hover:bg-gray-200 transition"
-          >
-            <FaTiktok className="text-[#66B4FF] text-lg" />
-          </a>
-          <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/people/Best-Dog/100063841380143/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 rounded-full hover:bg-gray-200 transition"
@@ -78,7 +70,7 @@ const Navbar = () => {
             <FaFacebookF className="text-[#66B4FF] text-lg" />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/cachorrosbestdog/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white p-2 rounded-full hover:bg-gray-200 transition"
@@ -91,4 +83,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;

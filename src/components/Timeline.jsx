@@ -59,9 +59,7 @@ const Timeline = () => {
 
           {/* Botones CTA */}
           <div className="flex gap-4 mt-10">
-            <button className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition">
-              Más información
-            </button>
+            
             <button className="bg-[#363636] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#e89e1e] transition">
               Comprar
             </button>

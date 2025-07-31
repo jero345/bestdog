@@ -2,6 +2,9 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Banner from "./Banner";
+import MenuHamburguer from "./MenuHamburguer";
+import FloatingButton from "./FloatingButton";
+
 
 const Layout = () => {
   return (
@@ -20,7 +23,15 @@ const Layout = () => {
 
       {/* Footer */}
       <Footer />
+
+      
+      {/* FMenu hamburguesa*/}
+      <MenuHamburguer />
+
+       {/* Boton wht*/}
+      <FloatingButton />
     </div>
+    
   );
 };
 

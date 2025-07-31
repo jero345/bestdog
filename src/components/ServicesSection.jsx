@@ -2,22 +2,32 @@ import aseo from "../assets/aseo.png";
 
 const services = [
   {
-    title: "Aseo",
-    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
+    title: "Cachorros de alta calidad ",
+    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servi.",
     img: "../assets/aseo.png",
   },
   {
-    title: "Formación",
+    title: "Certificado de salud y pureza",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
     img: "https://i.ibb.co/Zh0vPvD/training.jpg",
   },
   {
-    title: "Limpieza",
+    title: "Crianza con ética",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
     img: "https://i.ibb.co/N6WLx3n/cleaning.jpg",
   },
   {
-    title: "Cría",
+    title: "Acompañamiento y seguimiento",
+    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
+    img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
+  },
+ {
+    title: "Kit de bienvenida ",
+    desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
+    img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
+  },
+  {
+    title: "Entregas nacionales ",
     desc: "Había frotamiento de piernas en todo, por lo tanto, la actitud era tomar una siesta todo el día para obtener el mejor servicio.",
     img: "https://i.ibb.co/dKq6p9T/breeding.jpg",
   },
@@ -31,10 +41,7 @@ const Services = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold text-white">
           Lo que ofrecemos<span className="text-[#363636]">.</span>
         </h2>
-        <p className="text-white text-lg max-w-3xl mx-auto mt-4">
-          Ayudamos a salvar vidas de sus queridas mascotas. Nuestros entrenadores de mascotas expertos siempre están aquí para ayudar a su mascota necesitada.
-        </p>
-
+      
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map((s) => (
             <div

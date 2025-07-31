@@ -1,35 +1,136 @@
 import React, { useState } from "react";
 
-const categories = ["All", "Raza Pequeña", "Raza Mediana", "Raza Grande",];
+
+const categories = [ "Raza Pequeña", "Raza Mediana", "Raza Grande",];
 
 const puppies = [
   {
     id: 1,
-    title: "Training Tips",
+    title: "Pomerania",
     category: "Raza Pequeña",
     image: "https://place-puppy.com/300x200",
     description: "Consejos para entrenar cachorros de manera efectiva.",
+
+    
   },
   {
     id: 2,
-    title: "Fitness & Health",
+    title: "Bernés de la montaña ",
     category: "Raza Grande",
     image: "https://place-puppy.com/301x200",
     description: "Rutinas de ejercicio y salud para cachorros felices.",
   },
   {
     id: 3,
-    title: "Grooming Tips",
+    title: "Bulldog inglés ",
     category: "Raza Mediana",
     image: "https://place-puppy.com/302x200",
     description: "Secretos de grooming para mantener el pelaje sano.",
   },
   {
     id: 4,
-    title: "Breeding Info",
+    title: "Teckel",
     category: "Raza Pequeña",
     image: "https://place-puppy.com/303x200",
     description: "Guía sobre la cría responsable de cachorros.",
+  },
+    {
+    id: 5,
+    title: "Jack Russel",
+    category: "Raza Pequeña",
+    image: "https://place-puppy.com/303x200",
+    description: "Guía sobre la cría responsable de cachorros.",
+  },
+    {
+    id: 6,
+    title: "Bulldog francés",
+    category: "Raza Pequeña",
+    image: "https://place-puppy.com/303x200",
+    description: "Guía sobre la cría responsable de cachorros.",
+  },
+    {
+    id: 7,
+    title: "Pinscher",
+    category: "Raza Pequeña",
+    image: "https://place-puppy.com/303x200",
+    description: "Guía sobre la cría responsable de cachorros.",
+  },
+    {
+    id: 8,
+    title: "Yorkshire ",
+    category: "Raza Pequeña",
+    image: "https://place-puppy.com/303x200",
+    description: "Guía sobre la cría responsable de cachorros.",
+  },
+    {
+    id: 9,
+    title: "cocker spaniel",
+    category: "Raza Mediana",
+    image: "https://place-puppy.com/302x200",
+    description: "Secretos de grooming para mantener el pelaje sano.",
+  },
+    {
+    id: 10,
+    title: "pastor ganadero australiano",
+    category: "Raza Mediana",
+    image: "https://place-puppy.com/302x200",
+    description: "Secretos de grooming para mantener el pelaje sano.",
+  },
+    {
+    id: 11,
+    title: "Border collie",
+    category: "Raza Mediana",
+    image: "https://place-puppy.com/302x200",
+    description: "Secretos de grooming para mantener el pelaje sano.",
+  },
+    {
+    id: 12,
+    title: "Beagle",
+    category: "Raza Mediana",
+    image: "https://place-puppy.com/302x200",
+    description: "Secretos de grooming para mantener el pelaje sano.",
+  },
+    {
+    id: 13,
+    title: "Dálmata",
+    category: "Raza Mediana",
+    image: "https://place-puppy.com/302x200",
+    description: "Secretos de grooming para mantener el pelaje sano.",
+  },
+    {
+    id: 14,
+    title: "Husky siberiano",
+    category: "Raza Grande",
+    image: "https://place-puppy.com/301x200",
+    description: "Rutinas de ejercicio y salud para cachorros felices.",
+  },
+    {
+    id: 15,
+    title: "Doberman",
+    category: "Raza Grande",
+    image: "https://place-puppy.com/301x200",
+    description: "Rutinas de ejercicio y salud para cachorros felices.",
+  },
+    {
+    id: 16,
+    title: "Golden retriever",
+    category: "Raza Grande",
+    image: "https://place-puppy.com/301x200",
+    description: "Rutinas de ejercicio y salud para cachorros felices.",
+  },
+    {
+    id: 17,
+    title: "Pastor belga malinois",
+    category: "Raza Grande",
+    image: "https://place-puppy.com/301x200",
+    description: "Rutinas de ejercicio y salud para cachorros felices.",
+  },
+    {
+    id: 18,
+    title: "San Bernardo",
+    category: "Raza Grande",
+    image: "https://place-puppy.com/301x200",
+    description: "Rutinas de ejercicio y salud para cachorros felices.",
   },
 ];
 
