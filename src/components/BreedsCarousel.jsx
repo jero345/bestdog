@@ -26,7 +26,7 @@ import sanber from "../assets/San Bernardo.webp";
 import samo from "../assets/Samo.webp";
 import ale from "../assets/Pastor alemán.webp";
 import shet from "../assets/Shetland.webp";
-import chow from "../assets/Chow chow.webp";
+import chow from "../assets/chowchow.jpg";
 import pas from "../assets/Pastor ovejero australiano.webp";
 import pes from "../assets/Pastor ganadero australiano.webp";
 import bul from "../assets/Bulldog inglés.webp";
