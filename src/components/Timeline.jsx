@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBone, FaPaw, FaUtensils, FaBabyCarriage, FaSyringe, FaHome } from "react-icons/fa";
-import timeline from "../assets/timeline.png"; // Imagen de apoyo
+import timeline from "../assets/quienes somos.jpg"; // Imagen de apoyo
 
 const items = [
   {
