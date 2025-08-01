@@ -3,9 +3,9 @@ import { useState } from "react";
 const faqs = [
   
   {
-    question: "¿Qué razas de cachorros están disponibles en King Dog?",
+    question: "¿Qué razas de cachorros están disponibles en BestDog?",
     answer:
-      "En King Dog, contamos con una amplia selección de razas, desde pequeñas como Pomerania, Yorkshire Terrier y Shih Tzu, hasta medianas y grandes como Golden Retriever, Bulldog Francés, Labrador y Husky Siberiano.",
+      "En BestDog, contamos con una amplia selección de razas, desde pequeñas como Pomerania, Yorkshire Terrier y Shih Tzu, hasta medianas y grandes como Golden Retriever, Bulldog Francés, Labrador y Husky Siberiano.",
   },
   {
     question: "¿Los cachorros tienen certificado de pureza de raza?",

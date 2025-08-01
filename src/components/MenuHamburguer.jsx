@@ -1,12 +1,23 @@
 // src/components/MenuHamburguer.jsx
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { FaBars, FaTimes, FaTiktok, FaFacebookF, FaInstagram } from "react-icons/fa";
-import logo from "../assets/Loguini.png"; // tu logo
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FaBars, FaTimes, FaFacebookF, FaInstagram } from "react-icons/fa";
+import logo from "../assets/brr.png"; // tu logo
 
 const MenuHamburguer = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      // Si ya estás en Hogar, recarga la página
+      window.location.reload();
+    } else {
+      // Si no, navega a Hogar
+      navigate("/");
+    }
+  };
 
   const links = [
     { label: "Hogar", path: "/" },
@@ -18,8 +29,11 @@ const MenuHamburguer = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#66B4FF] shadow-md">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         
-        {/* Logo */}
-        <div className="flex items-center">
+        {/* Logo con función de volver al inicio */}
+        <div 
+          onClick={handleLogoClick}
+          className="flex items-center cursor-pointer"
+        >
           <img
             src={logo}
             alt="BestDogs Logo"
@@ -90,7 +104,6 @@ const MenuHamburguer = () => {
             ))}
           </ul>
           <div className="flex gap-4 mt-6">
-           
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
               className="bg-white p-2 rounded-full hover:bg-gray-200 transition">
               <FaFacebookF className="text-[#66B4FF] text-lg" />

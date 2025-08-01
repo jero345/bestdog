@@ -1,25 +1,64 @@
+// src/components/BreedsCarousel.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FaWhatsapp } from "react-icons/fa"; // Ícono de WhatsApp
+import { FaWhatsapp } from "react-icons/fa";
 
-// Importar imágenes locales
+// ✅ Importar imágenes locales
 import golden from "../assets/golden.jpeg";
 import bulldog from "../assets/Bulldog.webp";
 import beagle from "../assets/beagle.jpg";
 import dalmata from "../assets/dalmata.jpg";
 import rottweiler from "../assets/rottweiler.jpg";
 import doberman from "../assets/doberman.jpeg";
+import chit from "../assets/Shit Zu.webp";
+import york from "../assets/Yorkshire.webp";
+import pinch from "../assets/Pinscher.webp";
+import teck from "../assets/Teckel.webp";
+import jack from "../assets/Jack Russell.webp";
+import ou from "../assets/....webp"; // ⚠ asegúrate de reemplazar este archivo
+import corgi from "../assets/Corgi.webp";
+import bernes from "../assets/Bernes de la montaña.webp";
+import husk from "../assets/Husky siberiano.webp";
+import sanber from "../assets/San Bernardo.webp";
+import samo from "../assets/Samo.webp";
+import ale from "../assets/Pastor alemán.webp";
+import shet from "../assets/Shetland.webp";
+import chow from "../assets/Chow chow.webp";
+import pas from "../assets/Pastor ovejero australiano.webp";
+import pes from "../assets/Pastor ganadero australiano.webp";
+import bul from "../assets/Bulldog inglés.webp";
+import bor from "../assets/cão-collie-border.webp";
+import pom from "../assets/Pomsky.webp";
 
 const breeds = [
   { name: "Golden Retriever", img: golden },
   { name: "Bulldog", img: bulldog },
   { name: "Beagle", img: beagle },
-  { name: "Dalmata", img: dalmata },
+  { name: "Dálmata", img: dalmata },
   { name: "Rottweiler", img: rottweiler },
   { name: "Doberman", img: doberman },
+  { name: "Shih Tzu", img: chit },
+  { name: "Yorkshire", img: york },
+  { name: "Pinscher", img: pinch },
+  { name: "Teckel", img: teck },
+  { name: "Jack Russell", img: jack },
+   { name: "Westy", img: ou },
+  { name: "Corgi", img: corgi },
+  { name: "Bernés de la montaña", img: bernes },
+  { name: "Husky Siberiano", img: husk },
+  { name: "San Bernardo", img: sanber },
+  { name: "Samoyedo", img: samo },
+  { name: "Pastor Alemán", img: ale },
+  { name: "Shetland Sheepdog", img: shet },
+  { name: "Chow Chow", img: chow },
+  { name: "Pastor Ovejero Australiano", img: pas },
+  { name: "Pastor Ganadero Australiano", img: pes },
+  { name: "Bulldog Inglés", img: bul },
+  { name: "Border Collie", img: bor },
+  { name: "Pomsky", img: pom },
 ];
 
 const BreedsCarousel = () => {
@@ -28,9 +67,8 @@ const BreedsCarousel = () => {
       <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
         Razas Que Manejamos<span className="text-[#66B4FF]">.</span>
       </h2>
-      <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-        We help save lives of your beloved pets. Our expert pet trainers are
-        always here to help your pet in need.
+      <p className="text-gray-300 max-w-2xl mx-auto mb-12 text-lg">
+        Conoce la variedad de razas que criamos con amor, ética y responsabilidad.  
       </p>
 
       <Swiper
@@ -49,16 +87,16 @@ const BreedsCarousel = () => {
         }}
         speed={800}
         loop={true}
-        className="max-w-6xl"
+        className="max-w-7xl"
       >
         {breeds.map((breed, idx) => (
           <SwiperSlide key={idx}>
-            <div className="bg-[#1c1c1c] rounded-xl p-6 shadow-md hover:shadow-xl transition">
-              <div className="w-32 h-32 mx-auto mb-4">
+            <div className="bg-[#1c1c1c] rounded-xl p-6 shadow-md hover:shadow-2xl transition transform hover:scale-105">
+              <div className="w-36 h-36 mx-auto mb-4">
                 <img
                   src={breed.img}
                   alt={breed.name}
-                  className="w-full h-full object-cover rounded-full border-4 border-white"
+                  className="w-full h-full object-cover rounded-full border-4 border-white shadow-md"
                 />
               </div>
               <h3 className="text-xl font-bold">{breed.name}</h3>
@@ -73,9 +111,9 @@ const BreedsCarousel = () => {
           href="https://api.whatsapp.com/send?phone=573146582927&text=¡Hola!%20Estoy%20interesado%20en%20un%20cachorro%20🐶"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-105 hover:from-green-600 hover:to-green-700 transition-transform duration-300"
+          className="flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-110 hover:from-green-600 hover:to-green-700 transition-transform duration-300"
         >
-          <FaWhatsapp className="text-2xl" />
+          <FaWhatsapp className="text-2xl animate-bounce" />
           Contáctanos por WhatsApp
         </a>
       </div>
@@ -83,4 +121,4 @@ const BreedsCarousel = () => {
   );
 };
 
-export default BreedsCarousel;
+export default BreedsCarousel;

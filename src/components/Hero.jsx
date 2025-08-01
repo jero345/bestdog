@@ -67,7 +67,7 @@ const Hero = () => {
       </button>
       <button
         onClick={next}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#363636] hover:bg-[#e89e1e] text-white font-bold z-10 transition"
+        className="absolute right-6 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#363636] hover:bg-[#66B4FF] text-white font-bold z-10 transition"
       >
         →
       </button>

@@ -1,10 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import logo from "../assets/Loguini.png"; // tu logo
+import logo from "../assets/brr.png"; // tu logo
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -14,6 +14,14 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.location.reload(); // recarga si ya estás en Hogar
+    } else {
+      navigate("/"); // lleva al inicio si estás en otra ruta
+    }
+  };
 
   const links = [
     { label: "Hogar", path: "/" },
@@ -31,15 +39,18 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
         
-        {/* Logo */}
-        <div className="flex items-center">
+        {/* Logo con acción personalizada */}
+        <button
+          onClick={handleLogoClick}
+          className="flex items-center bg-transparent border-none cursor-pointer"
+        >
           <img
             src={logo}
             alt="BestDogs Logo"
-            className="max-h-14 w-auto object-contain drop-shadow-xl scale-125"
+            className="max-h-14 w-auto object-contain drop-shadow-xl scale-125 cursor-pointer"
             draggable="false"
           />
-        </div>
+        </button>
 
         {/* Links */}
         <ul className="flex gap-10 text-white font-bold text-lg mx-auto">
@@ -58,8 +69,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-       
       </div>
     </nav>
   );
