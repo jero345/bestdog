@@ -104,11 +104,11 @@ const MenuHamburguer = () => {
             ))}
           </ul>
           <div className="flex gap-4 mt-6">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.facebook.com/share/1CSyFCzPvG/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
               className="bg-white p-2 rounded-full hover:bg-gray-200 transition">
               <FaFacebookF className="text-[#66B4FF] text-lg" />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/cachorrosbestdog/" target="_blank" rel="noopener noreferrer"
               className="bg-white p-2 rounded-full hover:bg-gray-200 transition">
               <FaInstagram className="text-[#66B4FF] text-lg" />
             </a>
