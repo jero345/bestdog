@@ -22,7 +22,7 @@ const Footer = () => {
             <FaPhoneAlt /> 3146582927
           </p>
           <p className="flex items-center justify-center gap-2 mb-2">
-            <FaEnvelope /> Cachorrosbestdog
+            <FaEnvelope /> Cachorrosbestdog.com
           </p>
           <p className="flex items-center justify-center gap-2">
             <FaMapMarkerAlt /> Oriente Medellín
