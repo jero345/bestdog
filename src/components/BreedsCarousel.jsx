@@ -44,7 +44,6 @@ const breeds = [
   { name: "Pinscher", img: pinch },
   { name: "Teckel", img: teck },
   { name: "Jack Russell", img: jack },
-   { name: "Westy", img: ou },
   { name: "Corgi", img: corgi },
   { name: "Bernés de la montaña", img: bernes },
   { name: "Husky Siberiano", img: husk },
