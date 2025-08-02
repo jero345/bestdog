@@ -18,7 +18,6 @@ import york from "../assets/Yorkshire.webp";
 import pinch from "../assets/Pinscher.webp";
 import teck from "../assets/Teckel.webp";
 import jack from "../assets/Jack Russell.webp";
-import ou from "../assets/....webp"; // ⚠ asegúrate de reemplazar este archivo
 import corgi from "../assets/Corgi.webp";
 import bernes from "../assets/Bernes de la montaña.webp";
 import husk from "../assets/Husky siberiano.webp";
